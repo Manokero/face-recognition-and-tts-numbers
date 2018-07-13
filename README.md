@@ -5,18 +5,18 @@ El video de este proyecto esta en [aqui](https://youtu.be/_MmQACXnhJE). *Demo en
 ## Como instalar
 
 1. Descargar el repositorio.
-    1. git clone https://github.com/Manokero/face-recognition-and-tts-numbers.git
-    2. cd face-recognition-and-tts-numbers
+    * git clone https://github.com/Manokero/face-recognition-and-tts-numbers.git
+    * cd face-recognition-and-tts-numbers
 2. Crear un entorno virtual para el proyecto(recomendando)
-    1. pip install virtualenv
-    2. virtualenv *virtualenv_name*
-    3. .\*virtualenv_name*\Scripts\activate.bat (Windows)
+    * pip install virtualenv
+    * virtualenv *virtualenv_name*
+    * .\ *virtualenv_name* \Scripts\activate.bat (Windows)
 3. Instalar los paquetes necesarios
-    1. pip install opencv-python==3.3.0.10
-    2. pip install opencv-contrib-python==3.3.0.10
-    3. pip install pyaudio
-    4. pip install pillow
-    5. pip install numpy
+    * pip install opencv-python==3.3.0.10
+    * pip install opencv-contrib-python==3.3.0.10
+    * pip install pyaudio
+    * pip install pillow
+    * pip install numpy
 
 ## Como usar
 
