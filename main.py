@@ -19,7 +19,7 @@ def main():
         rf.run()
     else:
         suma = str(sum())
-        sum_array = list(suma)
+        sum_array = list(suma) # ['5', '4']
 
         image_recognized = tk.recognize()
         if image_recognized:

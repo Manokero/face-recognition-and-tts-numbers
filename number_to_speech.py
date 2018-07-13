@@ -9,22 +9,22 @@ dir_number = './voice_number/'
 special_numbers = ['1','2', '3', '4', '5']
 special_speech_numbers = [10, 20, 100]
 
-def speech_number(numbers=[]):
+def speech_number(numbers=[]): # ['5', '4']
     num = 0
     for state in range(len(numbers), 0, -1):
 
-        n = int("".join(numbers[-state:]))
+        n = int("".join(numbers[-state:])) # "54" -> 54
 
         if n in special_speech_numbers:
             wf = wave.open(f'{dir_number}specials/{n}.wav', 'rb')
             speech(wf)
             # print('special n>', n)
             break
-
+        # 1 1
         if state == 2 and numbers[num] == '1' and numbers[num+1] in special_numbers:
             descens(numbers[num+1])
             break
-
+#1004
         if numbers[num] == '0':
             num = num + 1
             continue

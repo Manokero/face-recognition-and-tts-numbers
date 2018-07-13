@@ -8,6 +8,7 @@ def create_dataset():
 
     Id = input('Dame un Id> ')
     sampleNum = 0
+    print(cam)
     while(True):
         ret, img = cam.read()
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -53,7 +54,7 @@ def recognize():
                     Id="Wildin"
                     isIdentifyed = True
                 elif(Id==2):
-                    Id="Yander"
+                    Id="Profesor"
                     isIdentifyed = True
             else:
                 Id="Buscando..."
