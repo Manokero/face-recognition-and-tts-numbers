@@ -12,12 +12,12 @@ import number_to_speech as nts
 
 
 def main():
-    steps = int(input("Bienvenidos... Programa por Wildin Mota\n Opciones\na. Presiona 1 para crear dataset y training data\nb. Presione cualquier otra tecla para hacer suma\n> "))
-
-    if(steps == 1):
+    steps = input("Bienvenidos... Programa por Wildin Mota\n Opciones\na. Presiona 1 para crear dataset y training data(Solo se permite el ID 1, 2 no mas)\nb. Presione 2 para hacer suma\n> ")
+    print('\n Use el ID 2 profesor para probar')
+    if(steps == '1'):
         tk.create_dataset()
         rf.run()
-    else:
+    elif(steps == '2'):
         suma = str(sum())
         sum_array = list(suma) # ['5', '4']
 
@@ -25,6 +25,9 @@ def main():
         if image_recognized:
             print(f'El resultado es {suma}')
             nts.speech_number(sum_array)
+    else:
+        print('Opcion no Valida')
+        main()
 
 def sum():
     numero1 = int(input('Dame el numero> '))
