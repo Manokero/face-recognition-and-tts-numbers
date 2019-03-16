@@ -7,8 +7,10 @@ def create_dataset():
     detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     Id = input('Dame un Id> ')
+    if Id not in ['1','2','3']:
+        print('Id invalido')
+        return
     sampleNum = 0
-    print(cam)
     while(True):
         ret, img = cam.read()
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -54,17 +56,17 @@ def recognize():
                     Id="Wildin"
                     isIdentifyed = True
                 elif(Id==2):
-                    Id="Profesor"
+                    Id="Ely"
                     isIdentifyed = True
             else:
                 Id="Buscando..."
             cv2.putText(im,str(Id), org=(x,y+h),fontFace=font, color=(255,255,255), fontScale=1)
 
-            if isIdentifyed:
-                break
+            # if isIdentifyed:
+            #     break
         cv2.imshow('im',im)
-        if isIdentifyed:
-            break
+        # if isIdentifyed:
+        #     break
         if cv2.waitKey(10) & 0xFF==ord('q'):
             break
 
