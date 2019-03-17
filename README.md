@@ -17,6 +17,7 @@ El video de este proyecto esta en [aqui](https://youtu.be/_MmQACXnhJE). *Demo en
     * pip install pyaudio
     * pip install pillow
     * pip install numpy
+ Tambien se puede instalar directamente desde el 'requirments.py'
 
 ## Como usar
 
